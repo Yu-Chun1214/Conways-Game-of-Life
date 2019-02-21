@@ -1,7 +1,8 @@
+import argparse
 from gameoflife import GameofLife
 if __name__ == '__main__':
     # You should not modify this part.
-    import argparse
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('--width',
                        default='60',
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     p = int(args.pattern)
     t = int(args.generation)
     
-    i=GameofLife(w,h)
+    i = GameofLife(w,h)
     i.set_pattern(p)
     i.play(t)
 
